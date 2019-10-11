@@ -16,4 +16,4 @@ let settlementSchema = new Schema({
     return this.find({_id:orderId}, cb);
 };*/
 
-module.exports = mongoose.model('Settlement', settlementSchema);
+module.exports = mongoose.model('Settlement', settlementSchema, 'Settlement');

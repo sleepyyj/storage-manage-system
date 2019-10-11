@@ -22,4 +22,4 @@ supplierSchema.statics.findById = function (supplierId, cb) {
     return this.find({_id:supplierId}, cb);
 };
 
-module.exports = mongoose.model('Supplier', supplierSchema);
+module.exports = mongoose.model('Supplier', supplierSchema, 'Supplier');

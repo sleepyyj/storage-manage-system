@@ -21,4 +21,4 @@ storageSchema.statics.findByStorageId=function(storageId, cb){
     return this.find({_id:storageId}, cb);
 };
 
-module.exports = mongoose.model('Storage', storageSchema);
+module.exports = mongoose.model('Storage', storageSchema, 'Storage');

@@ -17,4 +17,4 @@ productStocksSchema.statics.findById = function (productId, cb) {
     return this.find({productId:productId}, cb);
 };
 
-module.exports = mongoose.model('ProductStocks', productStocksSchema);
+module.exports = mongoose.model('ProductStocks', productStocksSchema, 'ProductStocks');

@@ -23,4 +23,4 @@ customerSchema.statics.findById = function (customerId, cb) {
     return this.find({_id:customerId}, cb);
 };
 
-module.exports = mongoose.model('Customer', customerSchema);
+module.exports = mongoose.model('Customer', customerSchema, 'Customer');

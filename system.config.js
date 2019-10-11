@@ -30,12 +30,12 @@ const defaultOptionsProd = {
 //开发模式数据库地址
 const mongooseConnectDev = "mongodb://localhost:27017/accountSystem";
 //部署模式数据库地址
-//const mongooseConnectPro = "mongodb://localhost:27017/accountSystem";
+const mongooseConnectPro = "mongodb://localhost:27017/accountSystem";
 
 
 
 const uploadImgServerDev = 'localhost';
-//onst uploadImgServerPro = '192.168.195.74'; 
+const uploadImgServerPro = 'localhost'; 
 
 module.exports = {
 	httpServer: debug ? httpServerDev:httpServerPro,

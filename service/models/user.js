@@ -14,4 +14,4 @@ userSchema.statics.findByUserName=function(username, cb){
     return this.find({username:new RegExp(username, 'i')}, cb);
 };
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('User', userSchema, 'User');

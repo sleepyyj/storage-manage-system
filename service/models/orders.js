@@ -25,4 +25,4 @@ orderSchema.statics.findByOrderId=function(orderId, cb){
     return this.find({_id:orderId}, cb);
 };
 
-module.exports = mongoose.model('Order', orderSchema);
+module.exports = mongoose.model('Order', orderSchema, 'Order');
